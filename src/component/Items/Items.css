@@ -1,0 +1,33 @@
+.items {
+	width: 31.2%;
+	margin: 1% 0 1% 2%;
+	background-color: black;
+	color: bisque;
+	text-align: center;
+	box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+}
+.itemTitle {
+	width: 100%;
+	margin: 1%;
+	padding: 1%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.itemDescription {
+	width: 100%;
+	margin: 1%;
+	padding: 1%;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-style: italic;
+}
+.itemImage {
+	margin: 1%;
+	padding: 1%;
+	align-items: center;
+	width: 100%;
+}
+.itemImage img {
+	width: 50%;
+	height: 50%;
+}
