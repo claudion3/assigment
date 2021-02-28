@@ -14,7 +14,11 @@ const ItemsList = props => {
 	let items = listItems.map((item, i) => {
 		return <Items key={i} title={item.title} description={item.description} imagePath={item.imagePath} />;
 	});
-	return <div className='showItems'>{items}</div>;
+	return (
+		<div className='showItems'>
+			<div className='item'>{items}</div>
+		</div>
+	);
 };
 
 export default ItemsList;

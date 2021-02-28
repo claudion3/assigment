@@ -9,7 +9,6 @@ const listItems = items;
 
 function App() {
 	const [query, SetQuery] = useState('');
-	let notFound = false;
 	const [currentPage, setCurrentPage] = useState(1);
 	const [itemsPage] = useState(3);
 
@@ -22,15 +21,18 @@ function App() {
 		return item.title.toLowerCase().includes(query.toLowerCase());
 	});
 
+	let notFound = false;
 	const indexOfLastItem = currentPage * itemsPage;
 	const indexOfFirstItems = indexOfLastItem - itemsPage;
 	const currentItems = filterItems.slice(indexOfFirstItems, indexOfLastItem);
 	const paginate = pageNumber => {
 		setCurrentPage(pageNumber);
 	};
+
 	if (currentItems.length === 0) {
 		notFound = true;
 	}
+
 	return (
 		<div className='home'>
 			<SearchItems onChange={handlerChange} />

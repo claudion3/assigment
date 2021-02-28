@@ -10,7 +10,6 @@ const Items = props => {
 			<div className='itemDescription'>
 				<h2>{props.description}</h2>
 			</div>
-
 			<div className='itemImage'>
 				<img src={props.imagePath} alt='img' />
 			</div>

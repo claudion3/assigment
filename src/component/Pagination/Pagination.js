@@ -9,6 +9,7 @@ const Pagination = props => {
 	for (let i = 1; i <= Math.ceil(totalItems / itemsParPage); i++) {
 		pageNumbers.push(i);
 	}
+
 	return (
 		<nav>
 			<ul className='pagination'>
@@ -23,4 +24,5 @@ const Pagination = props => {
 		</nav>
 	);
 };
+
 export default Pagination;

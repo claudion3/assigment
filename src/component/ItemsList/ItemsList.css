@@ -2,6 +2,12 @@
 	width: 100%;
 	display: flex;
 }
+.item {
+	margin: 1%;
+	padding: 3%;
+	width: 100%;
+	display: flex;
+}
 .notFound {
 	width: 30%;
 	padding: 10%;
@@ -14,4 +20,16 @@
 .notFound h1 {
 	font-size: 36px;
 	color: bisque;
+}
+@media screen and (max-width: 800px) {
+	.notFound h1 {
+		font-size: 18px;
+		color: bisque;
+	}
+	.item {
+		display: block;
+	}
+	.showItems {
+		padding: 3%;
+	}
 }
